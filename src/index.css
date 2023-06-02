@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-c: #1a861a;
+    --secondary-c: #70ffb0;
+}
+
+*{
+    scroll-behavior: smooth;
+   scroll-margin-top: 5rem;
+
+}
+
+.zzz{
+    z-index: 2000000000000000000;
+}
+
+@layer base{
+    html{
+        @apply scroll-smooth
+    }
+    body{
+       @apply font-[Roboto] overflow-x-hidden w-full
+       
+    }
+    h2{
+        @apply text-[28px] md:text-[40px] inline uppercase  text-gray-900 font-serif border-t-2 border-gray-800 py-2
+    }
+}
